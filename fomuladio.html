@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Compra y Venta</title>
+    <link rel="stylesheet" href="css/estilo10.css">
+    <style>
+        
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <h1>📄 Formulario de Compra y Venta</h1>
+
+        <form action="#" method="POST">
+     
+
+            <!-- Datos del Comprador -->
+            <div class="seccion">
+                <h2>👤 Datos del Comprador</h2>
+                <div class="fila">
+                    <div class="campo">
+                        <label>Nombre Completo:</label>
+                        <input type="text" name="nombre_comprador" required>
+                    </div>
+                    <div class="campo">
+                        <label>DNI / Identificación:</label>
+                        <input type="text" name="dni_comprador" required>
+                    </div>
+                </div>
+                <div class="fila">
+                    <div class="campo">
+                        <label>Teléfono:</label>
+                        <input type="tel" name="telefono_comprador">
+                    </div>
+                    <div class="campo">
+                        <label>Correo Electrónico:</label>
+                        <input type="email" name="correo_comprador">
+                    </div>
+                </div>
+                <div class="campo">
+                    <label>Dirección:</label>
+                    <input type="text" name="direccion_comprador">
+                </div>
+            </div>
+
+            <!-- Datos del Producto -->
+            <div class="seccion">
+                <h2>📦 Datos del Producto / Servicio</h2>
+                <div class="campo">
+                    <label>Descripción / Nombre:</label>
+                    <textarea name="descripcion_producto" rows="3" required></textarea>
+                </div>
+                <div class="fila">
+                    <div class="campo">
+                        <label>Cantidad:</label>
+                        <input type="number" name="cantidad" min="1" value="1" required>
+                    </div>
+                    <div class="campo">
+                        <label>Precio Unitario ($):</label>
+                        <input type="number" name="precio_unitario" step="0.01" required>
+                    </div>
+                </div>
+                <div class="fila">
+                    <div class="campo">
+                        <label>Total a Pagar ($):</label>
+                        <input type="number" name="total" step="0.01" required>
+                    </div>
+                    <div class="campo">
+                        <label>Forma de Pago:</label>
+                        <select name="forma_pago" required>
+                            <option value="">Seleccionar...</option>
+                            <option value="efectivo">Efectivo</option>
+                            <option value="transferencia">Transferencia Bancaria</option>
+                            <option value="tarjeta">Tarjeta de Crédito/Débito</option>
+                            <option value="cheque">Cheque</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Condiciones -->
+            <div class="seccion">
+                <h2>📝 Condiciones de la Operación</h2>
+                <div class="campo">
+                    <textarea name="condiciones" rows="4" placeholder="Escribe aquí las condiciones, garantías, plazos de entrega, etc."></textarea>
+                </div>
+            </div>
+
+            <!-- Botón Enviar -->
+            <button type="submit">✅ Registrar Compra-Venta</button>
+        </form>
+    </div>
+</body>
+</html>

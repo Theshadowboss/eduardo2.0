@@ -1,0 +1,28 @@
+body{
+    background-image: url(FONDO2.webp);
+}
+
+div{
+background-color: rgb(110, 129, 129);
+width: 300px;
+text-align: center;
+}
+
+div img{
+background-image: url(logo.webp);
+    width: 180px;
+    margin:30px ; 
+
+}
+section {
+    display: flex ;
+    justify-content: center;
+    column-gap: 50px;
+}
+
+
+section {
+    display: flex ;
+    justify-content: center;
+padding: 20px;
+}
